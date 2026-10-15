@@ -26,6 +26,6 @@ public class StudiKasus227 {
             }
         }
 
-        sc.close();
+        ryuh.close();
     }
 }
