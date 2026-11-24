@@ -7,14 +7,17 @@ public class ArrayRataNilai27 {
 
         int[] nilaiMhs = new int[10];
         int total = 0;
+        int jmlLulus = 0;
         double rata2;
 
         for (int i = 0; i < nilaiMhs.length; i++) {
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
             nilaiMhs[i] = input.nextInt();
             total += nilaiMhs[i];
+            if (nilaiMhs[i] > 70) {
+                jmlLulus++;
         }
-
+     }   
         rata2 = (double) total / nilaiMhs.length;
         System.out.println("Total nilai: " + total);
         System.out.println("Rata-rata: " + rata2);
@@ -37,6 +40,7 @@ public class ArrayRataNilai27 {
             predikat = "PERLU PENDAMPINGAN";
         }
         System.out.println("Predikat kelas: " + predikat);
+        System.out.println("Jumlah mahasiswa lulus (> 70): " + jmlLulus);
 
         input.close();
     }
