@@ -5,6 +5,15 @@ public class ArrayRataNilai27 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+         System.out.print("Masukkan jumlah mahasiswa: ");
+         int n = input.nextInt();
+
+        if (n <= 0) {
+            System.out.println("Jumlah mahasiswa harus lebih dari 0.");
+            input.close();
+            return;
+        }
+        
         int[] nilaiMhs = new int[10];
         int total = 0;
         int jmlLulus = 0;
