@@ -1,3 +1,4 @@
+package P12;
 import java.util.Scanner;
 
 public class TugasNilai127 {
